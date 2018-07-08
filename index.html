@@ -1,96 +1,163 @@
-<!DOCTYPE html>
+<!DOCTYPE>
+
 <html>
 <head>
-	<meta charset="UTF-8">		
-	<title>Curriculum Vitae</title>
-	<link rel="stylesheet" type="text/css" href="main.css">
-	<!--link rel="stylesheet" type="text/css" href="print.css" media="print"-->
-	<link rel="stylesheet" type="text/css" href="css/stylesheet.css"  charset="utf-8" />
+  <meta charset=utf-8">
+  <title>Curriculum VItae</title>
+  <link rel="stylesheet" type="text/css" href="css/reset.css" />
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+  <link rel="stylesheet" href="css/stylesheet.css" type="text/css" charset="utf-8" />
+  <link rel="stylesheet" href="css/progressbar.css" type="text/css" />
+  <link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 </head>
-<body>
-	<div id="container">
-		<div id="header">
-			<ul>
-				<li><a href="#">Galeria</a></li>
-				<li><a href="#">Contacte</a></li>
-			</ul>
-			<a href="https://www.facebook.com" class="social">Facebook</a><a href="https://www.instagram.com" class="social">Instagram</a>
-		</div>
-	</div>
-	<div class="section sectiontop">
-		<img src="índice.jpg" id="profilePicture" width="110" height="110" alt="foto_Perfil">
-		<h1>Antoni Amate</h1>
-		<h2>Enginyeria Informàtica</h2>
-		<ul>
-			<li><span>E-mail:</span> <a href="#">toni.amate97@gmail.com</a></li>
-			<li><span>Telèfon:</span> 640 28 55 96 </li>
-			<li><span>Localitat:</span> Sant Sadurní d'Anoia, Barcelona </li>
-		</ul>
-	</div>
-	<div class="section personal">
-		<div class="left">
-			<h3>Informació personal i professional </h3>
-		</div>
-		<div class="right">
-			<p>bla bla bla </p>
-		</div>
-	</div>
-	<div class="section galeria">
-		<div class ="left">
-			<h3>Galeria</h3>
-			<p>Treballs</p>
-		</div>
-		<div class="right gallery"> 
-			<a href="#"><img src ="https://placekitten.com/300/150" width="90" height="90" alt="image"></a>
-			<a href="#"><img src ="https://placekitten.com/300/150" width="90" height="90" alt="image"></a>
-			<a href="#"><img src ="https://placekitten.com/300/150" width="90" height="90" alt="image"></a>
-			<a href="#"><img src ="https://placekitten.com/300/150" width="90" height="90" alt="image"></a>
-			<a href="#"><img src ="https://placekitten.com/300/150" width="90" height="90" alt="image"></a>
-			<a href="#"><img src ="https://placekitten.com/300/150" width="90" height="90" alt="image"></a>
-			<a href="#"><img src ="https://placekitten.com/300/150" width="90" height="90" alt="image"></a>
-		</div>
-	</div>
-	<div class ="section education">
-		<div class ="left">
-			<h3>Experiència</h3>
-			<p>bla bla bla</p>
-		</div>
-		<div class ="right">
-			<div class="row selection_education">
-				<h4>Facultat d'Informàtica de Barcelona (FIB-UPC)</h4>
-				<h5>bla bla</div>
-				<p>Any</p>
-			</div>
-			<div class="row">
-				<h4>Altra</h4>
-				<h5>pipo</h5>
-				<p>Any</p>
-			</div>
-		</div>
-	</div>
-	<div class ="section technical">
-		<div class ="left"> 
-			<h3>Skills</h3>
-		</div>
-		<div class ="right">
-			<div class ="right right">
-				<h4>Treball i ganes d'aprendre</h4>
-					<div class = "progress-bar green">
-						<span></span>
-					</div>
-				<h4>C++/Python</h4>
-					<div class = "progress-bar orange">
-						<span></span>
-					</div>
-				<h4>HTML/CSS</h4>
-					<div class = "progress-bar orange">
-						<span></span>
-					</div>
-				<h4>JavaScript</h4>
-					<div class = "progress-bar red">
-						<span></span>
-					</div>
-			</div>
 
+<body>
+    <div id="container">
+      <div id="header">
+        <ul>
+          <li><a href="#idGaleria">Galeria</a></li>
+
+          <li><a href="#idContacte">Contacte</a></li>
+        </ul><a href="#" class="social_contact">Instagram</a> <a href="#" class=
+        "social_contact">GitHub</a>
+      </div>
+
+      <div class="section sectiontop">
+        <img src="" id="profilepicture" width="110" height="110"
+        alt="foto_perfil" />
+
+        <h1>Antoni Amate</h1>
+
+        <h2>Enginyeria Informàtica</h2>
+
+        <ul>
+          <li><span>Correu:</span> <a href="#">toni.amate97@gmail.com</a></li>
+
+          <li><span>Telèfon:</span> 640 28 55 96 </li>
+
+          <li><span>Localitat:</span> Sant Sadurní d'Anoia, Barcelona</li>
+        </ul>
+      </div>
+
+      <div class="section personal">
+        <div class="left">
+          <h3>Informació personal i professional</h3>
+        </div>
+
+        <div class="right">
+          <p>Bla Bla Bla</p>
+
+          <p>Bla Bla Bla</p>
+        </div>
+      </div>
+
+      <div class="section gallery">
+        <div class="left">
+          <h3 id="idGaleria">Galeria</h3>
+
+          <p>Alguns treballs i mostres d'HTML, CSS i Java</p>
+        </div>
+
+        <div class="right gallery">
+          <a href="#"><img src="" width="90" height="90" alt="image" /></a>
+          <a href="#"><img src="" width="90" height="90" alt="image" /></a>
+          <a href="#"><img src="" width="90" height="90" alt="image" /></a>
+          <a href="#"><img src="" width="90" height="90" alt="image" /></a>
+          <a href="#"><img src="" width="90" height="90" alt="image" /></a>
+          <a href="#"><img src="" width="90" height="90" alt="image" /></a>
+          <a href="#"><img src="" width="90" height="90" alt="image" /></a>
+          <a href="#"><img src="" width="90" height="90" alt="image" /></a>
+          <a href="#"><img src="" width="90" height="90" alt="image" /></a>
+        </div>
+      </div>
+
+      <div class="section education">
+        <div class="left">
+          <h3>Experiència i Educació</h3>
+
+          <p>Bla bla bla.</p>
+        </div>
+
+        <div class="right">
+          <div class="row selection_education">
+            <h4>Institut Intermunicipal del Penedès</h4>
+
+            <h5>Batxillerat Tecnològic</h5>
+
+            <p>Bla Bla Bla</p><a href="#">2013-2015 (Encara vigent)</a>
+          </div>
+
+          <div class="row">
+            <h4>Facultat d'Informàtica de Barcelona (FIB-UPC)</h4>
+
+            <h5>Grau en Enginyeria Informpàtica</h5>
+
+            <p>Bla Bla Bla</p><a href="#">2015-2018 (Encara vigent)</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="section technical">
+        <div class="left">
+          <h3>Coneixements</h3>
+        </div>
+
+        <div class="right">
+          <div class="right_right">
+            <h4>Treball en equip</h4>
+                <div class="progress-bar green">
+                    <span style="width: 90%"></span>
+                </div>
+                <h4>C++/Python</h4>
+                <div class="progress-bar orange">
+                    <span style="width: 80%"></span>
+                </div>
+                <h4>HTML/CSS</h4>
+                <div class="progress-bar orange">
+                    <span style="width: 60%"></span>
+                </div>
+                <h4>JavaScript</h4>
+                <div class="progress-bar red">
+                    <span style="width: 40%"></span>
+                </div>
+          </div>
+
+          <div class="right_left">
+            <p><span>Bla Bla.</span></p>
+
+            <p>Bla Bla.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section contact">
+        <div class="left">
+          <h3 id="idContacte">Contacte</h3>
+
+          <p>Bla.</p>
+        </div>
+
+        <div class="right">
+          <form class="form" action="#">
+            <p class="name"><input type="text" name="name" id="name" value="Nom" /></p>
+
+            <p class="email"><input type="text" name="email" id="email" value="Correu" /></p>
+
+            <p class="text">
+            <textarea name="text" rows="" cols="">Comentari
+</textarea></p>
+
+            <p class="submit"><input type="submit" value="Envia" /></p>
+          </form>
+
+          <p class="contact_text">Bla</p>
+
+          <div id="contact_icons">
+            <a href="#" class="social_contact">Google+</a>
+          </div>
+        </div>
+      </div>
+    </div>
 </body>
 </html>
