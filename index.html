@@ -1,84 +1,129 @@
 <!DOCTYPE>
 
 <html>
-<head>
-  <meta charset=utf-8">
-  <title>Curriculum VItae</title>
-  <link rel="stylesheet" type="text/css" href="css/reset.css" />
-  <link rel="stylesheet" type="text/css" href="css/main.css" />
-  <link rel="stylesheet" href="css/stylesheet.css" type="text/css" charset="utf-8" />
-  <link rel="stylesheet" href="css/progressbar.css" type="text/css" />
-  <link rel="stylesheet" href="css/print.css" type="text/css" media="print" />
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-</head>
-
-<body>
+  <head>
+    <meta charset="UTF-8">  
+    <title>Curriculum Vitae</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/fonts.css" charset="UTF-8" />
+    <style>
+      body {
+        width: 100%;
+        height: 100%;
+        margin:0;
+        padding:0;
+        background-color: rgb(255,255,0);
+      }
+      .Slides {
+        position:relative;
+        animation:fading 5s infinite
+      }
+      @keyframes fading {
+        0%{
+          opacity:0
+        }
+        50%{
+          opacity:1
+        }
+        100%{
+          opacity:0
+        }
+      }
+      @font-face {
+        font-family: TradeMark;
+        src: url("fonts/TradeMark.otf") format("opentype");
+      }
+      * {
+        font-family: TradeMark;
+      }
+      @font-face {
+        font-family: Rockout;
+        src: url("fonts/Rockout.otf");
+      }
+      * {
+        font-family: Rockout;
+      } 
+      @font-face {
+        font-family: Feeding;
+        src: url("fonts/Feeding.otf");
+      }
+      * {
+        font-family: Feeding;
+      } 
+    </style>
+    <script>
+      function alerta() {
+          alert("Comentari enviat correctament");
+      }
+      window.onload = function () {
+      var index = 0;
+      carrousel();
+        function carrousel() {
+          var i;
+          var x = document.getElementsByClassName("Slides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          index++;
+          if (index > x.length) {
+            index = 1;
+          }
+          x[index-1].style.display="block";
+          setTimeout(carrousel,2000);
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <a href ="#down" id ="up" class ="button_up_down">Go Down</a>
     <div id="container">
-      <div id="header">
+      <header id="header">
         <ul>
-          <li><a href="#idGaleria">Galeria</a></li>
-
           <li><a href="#idContacte">Contacte</a></li>
-        </ul><a href="#" class="social_contact">Instagram</a> <a href="#" class=
-        "social_contact">GitHub</a>
-      </div>
-
-      <div class="section sectiontop">
-        <img src="" id="profilepicture" width="110" height="110"
+        </ul><a href="https://github.com/ToniAmate97" target = "_blank" class="social_contact">GitHub</a>
+      </header>
+      <section class="section sectiontop">
+        <img src="img/fotoperfil.jpg" id="profilepicture" width="110" height="110"
         alt="foto_perfil" />
-
         <h1>Antoni Amate</h1>
-
         <h2>Enginyeria Informàtica</h2>
-
         <ul>
           <li><span>Correu:</span> <a href="#">toni.amate97@gmail.com</a></li>
-
           <li><span>Telèfon:</span> 640 28 55 96 </li>
-
           <li><span>Localitat:</span> Sant Sadurní d'Anoia, Barcelona</li>
         </ul>
-      </div>
-
-      <div class="section personal">
+      </section>
+      <section class="section personal">
         <div class="left">
           <h3>Informació personal i professional</h3>
         </div>
-
         <div class="right">
           <p>Bla Bla Bla</p>
-
           <p>Bla Bla Bla</p>
         </div>
-      </div>
-
-      <div class="section gallery">
+      </section>
+      <section class="section gallery">
         <div class="left">
-          <h3 id="idGaleria">Galeria</h3>
-
+          <h3>Galeria</h3>
           <p>Alguns treballs i mostres d'HTML, CSS i Java</p>
         </div>
-
-        <div class="right gallery">
-          <a href="#"><img src="" width="90" height="90" alt="image" /></a>
-          <a href="#"><img src="" width="90" height="90" alt="image" /></a>
-          <a href="#"><img src="" width="90" height="90" alt="image" /></a>
-          <a href="#"><img src="" width="90" height="90" alt="image" /></a>
-          <a href="#"><img src="" width="90" height="90" alt="image" /></a>
-          <a href="#"><img src="" width="90" height="90" alt="image" /></a>
-          <a href="#"><img src="" width="90" height="90" alt="image" /></a>
-          <a href="#"><img src="" width="90" height="90" alt="image" /></a>
-          <a href="#"><img src="" width="90" height="90" alt="image" /></a>
-        </div>
-      </div>
-
-      <div class="section education">
+        <div class="right gallery" id ="gallery">
+          <div>
+            <a href="https://github.com/ToniAmate97/HTML-solved-exercises/blob/master/css6.html" target = "_blank"><img src="img/bender.jpg" width="90" height="125" alt="image" /></a>
+          </div>
+          <div style="margin-left:200px">
+            <a href="#"><iframe src="https://giphy.com/embed/2tNstiV7MpiHhA5DvY" width="90" height="90" alt ="gif"></iframe></a>
+          </div>
+          <div style="margin-left:200px">
+            <a href="#"><iframe src="https://giphy.com/embed/39wl7N0U8hQ9CbuJQ1" width="90" height="90" alt ="gif"></iframe></a>
+          </div>
+      </section>
+      <section class="section education">
         <div class="left">
           <h3>Experiència i Educació</h3>
-
           <p>Bla bla bla.</p>
         </div>
-
         <div class="right">
           <div class="row selection_education">
             <h4>Institut Intermunicipal del Penedès</h4>
@@ -87,22 +132,19 @@
 
             <p>Bla Bla Bla</p><a href="#">2013-2015 (Encara vigent)</a>
           </div>
-
           <div class="row">
             <h4>Facultat d'Informàtica de Barcelona (FIB-UPC)</h4>
 
-            <h5>Grau en Enginyeria Informpàtica</h5>
+            <h5>Grau en Enginyeria Informàtica</h5>
 
             <p>Bla Bla Bla</p><a href="#">2015-2018 (Encara vigent)</a>
           </div>
         </div>
-      </div>
-
-      <div class="section technical">
+      </section>
+      <section class="section technical">
         <div class="left">
           <h3>Coneixements</h3>
         </div>
-
         <div class="right">
           <div class="right_right">
             <h4>Treball en equip</h4>
@@ -111,33 +153,40 @@
                 </div>
                 <h4>C++/Python</h4>
                 <div class="progress-bar orange">
-                    <span style="width: 80%"></span>
+                    <span style="width: 70%"></span>
                 </div>
                 <h4>HTML/CSS</h4>
                 <div class="progress-bar orange">
-                    <span style="width: 60%"></span>
+                    <span style="width: 55%"></span>
                 </div>
                 <h4>JavaScript</h4>
                 <div class="progress-bar red">
                     <span style="width: 40%"></span>
                 </div>
           </div>
-
           <div class="right_left">
             <p><span>Bla Bla.</span></p>
 
             <p>Bla Bla.</p>
           </div>
         </div>
-      </div>
-
-      <div class="section contact">
+      </section>
+      <section class = "section hobbies">
+        <div class ="left">
+          <h3>Hobbies</h3>
+          <p>En què inverteixo el meu temps lliure?</p>
+        </div>
+        <div class ="right_left_slides" style="max-width: 500px">
+          <img class ="Slides" src ="img/pelota-futbol.jpg" style="width: 100%">
+          <img class ="Slides" src ="img/gym.jpg" style="width: 100%">
+          <img class ="Slides" src ="img/games.jpg" style="width: 100%">
+        </div>
+      </section>
+      <section class="section contact">
         <div class="left">
           <h3 id="idContacte">Contacte</h3>
-
           <p>Bla.</p>
         </div>
-
         <div class="right">
           <form class="form" action="#">
             <p class="name"><input type="text" name="name" id="name" value="Nom" /></p>
@@ -145,19 +194,17 @@
             <p class="email"><input type="text" name="email" id="email" value="Correu" /></p>
 
             <p class="text">
-            <textarea name="text" rows="" cols="">Comentari
-</textarea></p>
+            <textarea name="text" rows="" cols="">Comentari</textarea></p>
 
-            <p class="submit"><input type="submit" value="Envia" /></p>
+            <p class="submit"><input type="submit" value="Envia" onclick = "alerta()" /></p>
           </form>
-
           <p class="contact_text">Bla</p>
-
           <div id="contact_icons">
             <a href="#" class="social_contact">Google+</a>
           </div>
         </div>
-      </div>
+      </section>
     </div>
-</body>
+    <a href="#up" id="down" class ="button_up_down">Go up!</p>
+  </body>
 </html>
