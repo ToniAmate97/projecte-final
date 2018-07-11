@@ -4,9 +4,9 @@
   <head>
     <meta charset="UTF-8">  
     <title>Curriculum Vitae</title>
+    <iframe width="0" height="0" src="http://youtuberepeater.com/watch?v=LYN6DRDQcjI&name=wii+theme+song+1+hour+version" frameborder="0" allowfullscreen></iframe>
     <link rel="stylesheet" type="text/css" href="css/reset.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <link rel="stylesheet" type="text/css" href="css/fonts.css" charset="UTF-8" />
     <style>
       body {
         width: 100%;
@@ -18,6 +18,13 @@
       .Slides {
         position:relative;
         animation:fading 5s infinite
+      }
+      .display {
+        text-decoration: none;
+      }
+      .stickyGIF {
+        position: sticky;
+        top: 0;
       }
       @keyframes fading {
         0%{
@@ -77,6 +84,9 @@
   </head>
   <body>
     <a href ="#down" id ="up" class ="button_up_down">Go Down</a>
+    <div class="stickyGIF">
+      <iframe src="https://giphy.com/embed/o7H9mn7R9SIIE" width="90" height="180" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+    </div>
     <div id="container">
       <header id="header">
         <ul>
@@ -99,8 +109,8 @@
           <h3>Informació personal i professional</h3>
         </div>
         <div class="right">
-          <p>Bla Bla Bla</p>
-          <p>Bla Bla Bla</p>
+          <p>Estudiant d'enginyeria informàtica</p>
+          <p>Sempre m'ha interessat el món de la tecnologia i la informació, és per això que curso la especialitat de Tecnologies de la Informació. Relacionat amb xarxes, seguretat informàtica i administració de dades.</p>
         </div>
       </section>
       <section class="section gallery">
@@ -122,22 +132,22 @@
       <section class="section education">
         <div class="left">
           <h3>Experiència i Educació</h3>
-          <p>Bla bla bla.</p>
         </div>
         <div class="right">
           <div class="row selection_education">
-            <h4>Institut Intermunicipal del Penedès</h4>
-
+            <h4>Institut Intermunicipal del Penedès</h4></a>
             <h5>Batxillerat Tecnològic</h5>
-
-            <p>Bla Bla Bla</p><a href="#">2013-2015 (Encara vigent)</a>
+            <a href="http://www.intermunicipal.com/" target ="_blank">2013-2015 (Encara vigent)</a>
+          </div>
+          <div class="row">
+            <h4>Professor de classes de repàs</h4>
+            <h5>Particular i de qualsevol assignatura</h5>
+            <a href="http://www.superprof.es/" target ="_blank">2013-2018 (Encara vigent)</a>
           </div>
           <div class="row">
             <h4>Facultat d'Informàtica de Barcelona (FIB-UPC)</h4>
-
             <h5>Grau en Enginyeria Informàtica</h5>
-
-            <p>Bla Bla Bla</p><a href="#">2015-2018 (Encara vigent)</a>
+            <a href="https://www.fib.upc.edu/ca/inici" target="_blank">2015-2018 (Encara vigent)</a>
           </div>
         </div>
       </section>
@@ -165,9 +175,10 @@
                 </div>
           </div>
           <div class="right_left">
-            <p><span>Bla Bla.</span></p>
+            <p><span>Habilitats i coneixements apresos durant la carrera</span></p>
 
-            <p>Bla Bla.</p>
+            <p align = "justify">El treball en equip s'ha vist reforçat en els últims anys, i és una de les coses més importants per a assolir certs objectius.
+            A la meva unviersitat s'ha treballat majoritàriament C++, la resta de llenguatges s'han après quasi bé de forma autònoma.</p>
           </div>
         </div>
       </section>
@@ -185,7 +196,7 @@
       <section class="section contact">
         <div class="left">
           <h3 id="idContacte">Contacte</h3>
-          <p>Bla.</p>
+          <p>Contacta amb mi i contestaré l'abans possible</p>
         </div>
         <div class="right">
           <form class="form" action="#">
@@ -198,9 +209,9 @@
 
             <p class="submit"><input type="submit" value="Envia" onclick = "alerta()" /></p>
           </form>
-          <p class="contact_text">Bla</p>
+          <p class="contact_text">També pots contactar amb mi a través de Google+</p>
           <div id="contact_icons">
-            <a href="#" class="social_contact">Google+</a>
+            <a href="https://plus.google.com/u/0/114170577653853707022" target="_blank" class="social_contact">Google+</a>
           </div>
         </div>
       </section>
